@@ -48,30 +48,27 @@ class MainActivity : AppCompatActivity() {
             { view, year, month, dayOfMonth ->
 
                 var selectedDate = "$dayOfMonth.${month + 1}.$year"
-                /* Ausgewähltes Datum wird im Textfeld als Text gesetzt */
 
                 binding.tvSelectedDate.text = selectedDate
-
-
-
 
                 val sdf = SimpleDateFormat("dd.MM.yyyy", Locale.GERMAN)
 
                 val sdfDate = sdf.parse(selectedDate)
+                val currentDate = Date()
 
-                val selectedDateToMinutes = sdfDate!!.time / 60000
+               /* val selectedDateToMinutes = sdfDate!!.time / 60000
 
                 val currentDate = sdf.parse(sdf.format(System.currentTimeMillis()))
 
                 val currentDateToMinutes = currentDate!!.time / 60000
 
-                // Calculate in days
-
-                val currentDateToDays = currentDate
-
                 val differenceInMinutes = currentDateToMinutes - selectedDateToMinutes
 
-                binding.tvSelectedDateInMinutes.setText(differenceInMinutes.toString())
+                binding.tvSelectedDateInMinutes.setText(differenceInMinutes.toString())  */
+
+                val differenceInMillis = currentDate.time - sdfDate!!.time
+                // terminate this code
+
 
             }, year, month, day
         )
