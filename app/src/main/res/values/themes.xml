@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AgeInMinutes" parent="Theme.AppCompat.Light">
+        <!-- Primary brand Color -->
+        <item name="colorPrimary">@color/smaragd</item>
+        <item name="colorPrimaryVariant">@color/teal_200</item>
+        <item name="colorOnPrimary">@color/sand</item>
+        <!-- Secondary brand Color -->
+        <item name="colorSecondary">@color/purpur</item>
+        <item name="colorSecondaryVariant">@color/sand</item>
+        <item name="colorOnSecondary">@color/yellow</item>
+        <!-- Status Bar Color. -->
+
+
+        <!-- Customize your light theme here. -->
+
+    </style>
+
+    <style name="Theme.AgeInMinutes" parent="Base.Theme.AgeInMinutes" />
+</resources>
