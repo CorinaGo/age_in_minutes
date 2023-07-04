@@ -41,6 +41,7 @@ class MainActivity : AppCompatActivity() {
         val day = myCalender.get(Calendar.DAY_OF_MONTH)
 
 
+
         val dpd = DatePickerDialog(
             this,
 
@@ -63,6 +64,10 @@ class MainActivity : AppCompatActivity() {
                 val currentDate = sdf.parse(sdf.format(System.currentTimeMillis()))
 
                 val currentDateToMinutes = currentDate!!.time / 60000
+
+                // Calculate in days
+
+                val currentDateToDays = currentDate
 
                 val differenceInMinutes = currentDateToMinutes - selectedDateToMinutes
 
